@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :set_messages
 
   def index
-    render json: @messages
+    
   end
 
   private
