@@ -1,11 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Greeting from './Greeting'
+
 class App extends React.Component {
   render () {
     return (
-      <React.Fragment>
-        Greeting: {this.props.greeting}
-      </React.Fragment>
+      <BrowserRouter>
+      <Routes>
+        <Route exact path='/' render={() => <Greeting greeting="Friend"/>} />
+      </Routes>
+      </BrowserRouter>
     );
   }
 }
