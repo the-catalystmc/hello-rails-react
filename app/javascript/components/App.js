@@ -1,18 +1,23 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Provider } from "react-redux"
+import store from "../configureStore"
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import Greeting from './Greeting'
-
+import Greeting from "./Greeting"
 class App extends React.Component {
   render () {
     return (
-      <BrowserRouter>
-      <Routes>
-        <Route exact path='/' render={() => <Greeting greeting="Friend"/>} />
-      </Routes>
-      </BrowserRouter>
+      // <React.Fragment>
+      //   Greeting: {this.props.greeting}
+      // </React.Fragment>
+    <React.StrictMode>
+      <Provider store={store}>
+      <div>
+        <Greeting />
+      </div>
+      </Provider>
+    </React.StrictMode>
+
     );
   }
 }
