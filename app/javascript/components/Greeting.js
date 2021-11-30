@@ -3,7 +3,7 @@ import { connect, useSelector } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 const Greeting = () => {
-  const data = useSelector((state) => state.rootReducer);
+  const data = useSelector((state) => state.messagesReducer);
 
   return(
     <div>
