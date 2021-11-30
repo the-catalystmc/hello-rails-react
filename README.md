@@ -13,8 +13,8 @@ The Hello Rails React App is a simple app that integrates React into Rails and s
 1. Clone the repo
 
    ```sh
-git clone git@github.com:the-catalystmc/budget-app.git   
-    ```
+   git@github.com:the-catalystmc/hello-rails-react.git
+   ```
 
 ### Usage
 
@@ -69,7 +69,7 @@ git clone git@github.com:the-catalystmc/budget-app.git
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/the-catalystmc/recipe-app/issues).
+Feel free to check the [issues page](https://github.com/the-catalystmc/hello-rails-react/issues).
 
 ## Show your support
 
