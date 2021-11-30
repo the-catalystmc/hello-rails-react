@@ -12,7 +12,7 @@ class App extends React.Component {
       // </React.Fragment>
     <React.StrictMode>
       <Provider store={store}>
-      <div>
+      <div className="cont">
         <Greeting />
       </div>
       </Provider>
