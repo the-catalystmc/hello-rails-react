@@ -1,9 +1,15 @@
-import React from "react"
-import { connect, useSelector } from 'react-redux';
+import React, { useEffect } from "react"
+import { useSelector, useDispatch } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
+import { getMessages } from "../messages";
 
 const Greeting = () => {
   const data = useSelector((state) => state.messagesReducer);
+  const dispatch = useDispatch();
+
+    useEffect(() => {
+      dispatch(getMessages());
+  }, []);
 
   return(
     <div>
@@ -28,13 +34,5 @@ const Greeting = () => {
 //     );
 //   }
 // }
-
-// const structuredSelector = createStructuredSelector({
-//   messages: state => state.messages,
-// });
-
-// const mapDispatchToProps = { getThings };
-
-// export default connect(structuredSelector, mapDispatchToProps)(Greeting);
 
 export default Greeting;
